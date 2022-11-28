@@ -1,12 +1,10 @@
 const { Client } = require('pg');
 const path = require('path');
 
-const envName = process.argv.slice(2)[0];
-
-const loadEnv = (envName) => {
+const loadEnv = () => {
   const { NODE_ENV } = process.env;
   if (NODE_ENV != 'production') {
-    const envFile = envName === '../.env.test';
+    const envFile = '../.env.test';
 
     require('dotenv').config({
       path: path.join(__dirname, envFile),
@@ -37,5 +35,5 @@ const dropDatabase = async (databaseName) => {
   }
 };
 
-const databaseName = loadEnv(envName);
+const databaseName = loadEnv();
 dropDatabase(databaseName);

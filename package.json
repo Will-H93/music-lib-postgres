@@ -1,0 +1,23 @@
+{
+  "name": "music-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Will-H93/music-lib-postgres.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Will-H93/music-lib-postgres/issues"
+  },
+  "homepage": "https://github.com/Will-H93/music-lib-postgres#readme",
+  "devDependencies": {
+    "eslint": "^8.28.0"
+  }
+}
